@@ -5,20 +5,20 @@
 class Kiroku < Formula
   desc "a minimal TUI task manager with spaces, two-column layout, and local persistence."
   homepage "https://github.com/kenanbendz/kiroku"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kenanbendz/kiroku/releases/download/v0.1.0/kiroku_0.1.0_darwin_amd64.tar.gz"
-      sha256 "da088de0a8fb3eb9b72a2720c20cf83d05453d4db7dc8c59159ef7e949f6f04d"
+      url "https://github.com/kenanbendz/kiroku/releases/download/v0.1.1/kiroku_0.1.1_darwin_amd64.tar.gz"
+      sha256 "b90ea299033830cd6b32df42a4cf95533fbf7bd0563eac114f1c2791524f6cce"
 
       def install
         bin.install "kiroku"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kenanbendz/kiroku/releases/download/v0.1.0/kiroku_0.1.0_darwin_arm64.tar.gz"
-      sha256 "ed7851eb65d5c567192465bf990b0ce200cc387b701e4380f2ea3cadb6e34a79"
+      url "https://github.com/kenanbendz/kiroku/releases/download/v0.1.1/kiroku_0.1.1_darwin_arm64.tar.gz"
+      sha256 "5e8118c1ae1972de4124ef942bdc2aec23041d0a44b867cd99ac2c81318ac011"
 
       def install
         bin.install "kiroku"
@@ -28,15 +28,15 @@ class Kiroku < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kenanbendz/kiroku/releases/download/v0.1.0/kiroku_0.1.0_linux_amd64.tar.gz"
-      sha256 "85343acab0c3e257ab61e192ea305c011eb6546879dbf92d6a3d7bb898dd324e"
+      url "https://github.com/kenanbendz/kiroku/releases/download/v0.1.1/kiroku_0.1.1_linux_amd64.tar.gz"
+      sha256 "640e59d18063320d6f955395c6ffe9c761cbd8e04732b99d1de0e261b210f6d8"
       def install
         bin.install "kiroku"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kenanbendz/kiroku/releases/download/v0.1.0/kiroku_0.1.0_linux_arm64.tar.gz"
-      sha256 "b700956e1f1ef5e28f03ba9c0a1f6690f5e214d384da530ada92cd6d377f7ee3"
+      url "https://github.com/kenanbendz/kiroku/releases/download/v0.1.1/kiroku_0.1.1_linux_arm64.tar.gz"
+      sha256 "fa4af96a6d18bc0b40570b2dbb7454733028188c288131d5b9d188cb14cbfacd"
       def install
         bin.install "kiroku"
       end
